@@ -9,30 +9,65 @@
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Pacifico|Quicksand" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 </head>
 <body>
-    <div class="">
-      <header class="nav">
-        <a href="index.html">
-          <i>
-          <img class="icon i-96" src="images/logo.jpg" alt="">
-          </i>
-        </a>
-        <div class="grid">
-          <div class="unit unit-xs-hidden unit-s-hidden m-1-2 l-1-2 gutter-1-2">
-            <ul class="text-right pin-top-right pad-t-1-2">
-              <li class="push-right"><a href="index.html">Home</a></li>
-              <li class="push-right"><a href="adopt.html">Help the Foundation</a></li>
-              <li class="push-right"><a href="rescues.html">Our Rescues</a></li>
-            </ul>
-          </nav>
+
+  <ul class="skip-links">
+    <li><a href="#nav">Jump to nav</a></li>
+    <li><a href="#main">Jump to main</a></li>
+    <li><a href="#content">Jump to content</a></li>
+    <li><a href="#about">Jump to about</a></li>
+  </ul>
+
+
+  <header role="banner" class="max-width">
+    <div class="grid">
+      <div class+"unit xs-1 s-1 m-1 l-1-4 xl-1-4 logo">
+        <img src="images/logo.svg" alt="The David Sheldrick Wildlife Trust">
+      </div>
+
+      <div class="unit xs-1 s-1 m-1 l-3-4 xl-3-4">
+        <nav tabindex="0" id="nav" role="navigation">
+          <ul class="nav-wrapper list-group text-uppe">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="adopt.html">Help the Foundation</a></li>
+            <li><a href="rescues.html">Our Rescues</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+    <section id="content">
+      <div class="grid banner-container" aria-label="Mother elephant with baby in the brush on a sunny day">
+        <div class="unit banner-wrapper">
+          <h1 class="absolute island">The David Sheldrick Wildlife Trust</h1>
+          <p class="absolute island">A lifetime dedicated to the protection and preservation of Africa's Wilderness and its denizens, particularlt endangered species such as elephants and black rhino</p>
         </div>
-      </header>
-      <div class="grid">
-        <div class="banner xs-1 s-1 m-1 l-1">
-          <img class="img-flex" src="images/background.jpg" alt="">
+      </div>
+    </section>
+
+    <section id="about" class="max-width">
+      <div class="grid grid-middle">
+        <div class="unit xs-1 s-1 m-1 l-1-3 xl-1-3 mission">
+          <h2 class="tera">Our Mission</h2>
+          <p>The David Sheldrick Wildlife Trust embraces all measures that compliment the conservation, preservation and protection of wildlife. These include anti-poaching, safe guarding the natural environment, enhancing community awareness, addressing animal welfare issues, providing veterinary assistance to animals in need, rescuing and hand rearing elephant and rhino orphans, along with other species that can ultimately enjoy a quality of life in wild terms when grown.</p>
         </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+      <div class="grid max-width micro pad-top">
+        <div class="unit xs-1 s-1 m-1-3 l-1-3 xl-1-3 push-1 foot">
+          <h3 class="kilo bold text-upper push-1-2">Home Base</h3>
+          <p class="push-1-2">KWS Central Workshop Gate, off, Magadi Rd,<br>
+            Nairobi, Kenya</p>
+        </div>
+    </footer>
+
 
 </body>
 </html>

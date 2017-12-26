@@ -1,0 +1,75 @@
+html {
+  background-color: #e7f9e5;
+  font-family: 'Nunito', sans-serif;
+}
+
+.max-width {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo img {
+    max-width: 300px;
+    min-width: 200px;
+    width: 75%;
+}
+
+nav-wrapper {
+  display: inline;
+}
+
+header nav li {
+  margin-bottom: 1.75em;
+  display: block;
+  width: 100%;
+}
+
+header nav li a {
+  text-decoration: none;
+  color: #053800;
+  width:100%;
+}
+
+header nav li a:hover {
+  border-bottom: 2px solid #053800;
+}
+
+.banner-container {
+  background-image: url("../images/background.jpg");
+  background-image: linear-gradient(to bottom, , #ffffff);
+  width: 100%;
+  padding: 200px 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-wrapper h1 {
+  margin-top: 2em;
+  color: #fff;
+}
+
+.banner-wrapper p {
+  margin-top: 6em;
+  color: #fff;
+}
+
+.mission {
+  margin-left: 23px;
+  padding-top: 15px;
+  color: #053800;
+}
+
+footer {
+  background-color: #053800;
+  color: #fff;
+}
+
+.foot {
+  margin-left: 23px;
+  text-align: center;
+}
+
+h3 {
+  font-weight: bold;
+}
