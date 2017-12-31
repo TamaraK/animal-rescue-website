@@ -1,5 +1,5 @@
 html {
-  background-color: #e7f9e5;
+  background-color: #f5fff4;
   font-family: 'Nunito', sans-serif;
 }
 
@@ -15,8 +15,9 @@ html {
 }
 
 nav-wrapper {
-  display: inline;
+  display: inline-block;
 }
+
 
 header nav li {
   margin-bottom: 1.75em;
@@ -27,7 +28,6 @@ header nav li {
 header nav li a {
   text-decoration: none;
   color: #053800;
-  width:100%;
 }
 
 header nav li a:hover {
@@ -35,13 +35,37 @@ header nav li a:hover {
 }
 
 .banner-container {
-  background-image: url("../images/background.jpg");
-  background-image: linear-gradient(to bottom, , #ffffff);
   width: 100%;
   padding: 200px 0;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 2rem;
+}
+
+.banner-container::before{
+  background: rgba(0, 0, 0, 0)
+  -webkit-linear-gradient(bottom left, rgba(120, 120, 120, .5) 0%, rgba(120, 120, 120, .5) 100%) repeat;
+  content: "";
+  position: absolute;
+  display: block;
+  height: 43.5%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  margin-top: 13.3em;
+}
+
+.banner-main {
+  background-image: url("../images/background.jpg");
+}
+
+.banner-rescues {
+  background-image: url("../images/babay.jpg");
+}
+
+.banner-adopt {
+  background-image: url("../images/rhinos.jpg");
 }
 
 .banner-wrapper h1 {
@@ -59,6 +83,39 @@ header nav li a:hover {
   padding-top: 15px;
   color: #053800;
 }
+
+.cards {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+.cards li {
+  display: inline-block;
+  margin: 0 .5em 1em;
+  max width: 30em;
+  padding: 1em;
+  border: 2px solid #053800;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.cards img {
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.cards strong {
+  display: block;
+
+  font-size: 1.125rem;
+}
+
+.cards dl {
+  margin-bottom: 1rem;
+}
+
 
 footer {
   background-color: #053800;
