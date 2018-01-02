@@ -39,6 +39,100 @@
     </div>
   </header>
 
+  <form class="" action="index.html" method="POST">
+
+    <fieldset class="wrapper">
+
+      <legend class="giga gutter-1-2 pad-t-2 pad-b-1-2">Personal details</legend>
+
+      <div class="grid grid-middle">
+        <div class="unit gutter-1-2 xs-1 s-1 m-1-2 l-1-2 xl-1-2 pad-bottom pad-top">
+          <label for="name">Full name</label>
+          <input id="name" name="name">
+          <label for="name" class="italic micro">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</label>
+        </div>
+
+        <div class="unit gutter-1-2 xs-1 s-1 m-1-2 l-1-2 xl-1-2 pad-bottom pad-t-1-4">
+          <label for="name">What should we call you?</label>
+          <input type="text" name="nickname">
+          <label for="name" class="italic micro">What all your friends call you, e.g. “Liz”.</label>
+        </div>
+
+        <div class="unit gutter-1-2 xs-1 s-1 m-1-2 l-1-2 xl-1-2 pad-bottom pad-t-1-4">
+          <label for="date">Date of birth</label>
+          <input type="date" name="date" id="date">
+        </div>
+
+        <div class="unit gutter-1-2 xs-1 s-1 m-1-2 l-1-2 xl-1-2 pad-bottom pad-t-1-4">
+          <label for="name">T-shirt size</label>
+          <select class="size" name="size">
+            <option value="">Select a t-shirt size</option>
+            <option value="">Fitted: XS</option>
+            <option value="">Fitted: S</option>
+            <option value="">Fitted: M</option>
+            <option value="">Fitted: L</option>
+            <option value="">Fitted: XL</option>
+            <option value="">Straight-cut: XS</option>
+            <option value="">Straight-cut: S</option>
+            <option value="">Straight-cut: M</option>
+            <option value="">Straight-cut: L</option>
+            <option value="">Straight-cut: XL</option>
+          </select>
+        </div>
+
+        <div class="unit gutter-1-2 xs-1 s-1 m-1-2 l-1-2 xl-1-2 pad-bottom pad-t-1-4">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email">
+        </div>
+
+        <div class="unit gutter-1-2 xs-1 s-1 m-1-2 l-1-2 xl-1-2 pad-bottom pad-t-1-4">
+          <label for="number">Phone number<span class="opt italic"> (optional)</span></label>
+          <input type="tel" name="number" id="number">
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset class="wrapper pad-bottom">
+      <legend class="giga pad-bottom pad-top gutter-1-2">Address</legend>
+
+      <div class="grid grid-middle">
+        <div class="unit gutter-1-2 xs-1 s-1 m-1-2 l-1-2 xl-1-2 pad-bottom pad-t-1-4">
+          <label for="address">Street address</label>
+          <input type="text" name="address" id="address">
+        </div>
+
+        <div class="unit gutter-1-2 xs-1 s-1 m-1-2 l-1-2 xl-1-2 pad-bottom pad-t-1-2">
+          <label for="city">City</label>
+          <input type="text" name="city" id="city">
+        </div>
+
+        <div class="unit gutter-1-2 xs-1 s-1 m-1-2 l-1-2 xl-1-2 pad-bottom pad-top">
+          <label for="province">Province</label>
+          <select id="province">
+            <option>Select a province</option>
+            <option>Alberta</option>
+            <option>British Columbia</option>
+            <option>Manitoba</option>
+            <option>New Brunswick</option>
+            <option>Newfoundland & Labrador</option>
+            <option>Northwest Territories</option>
+            <option>Nova Scotia</option>
+            <option>Nunavut</option>
+            <option>Ontario</option>
+            <option>Prince Edward Island</option>
+            <option>Québec</option>
+            <option>Saskatchewan</option>
+            <option>Yukon</option>
+          </select>
+        </div>
+
+        <div class="unit gutter-1-2 xs-1 s-1 m-1-2 l-1-2 xl-1-2 pad-b-1-2 pad-t-1-2">
+          <label for="postal">Postal code</label>
+          <input type="text" minlength="6" id="postal">
+        </div>
+      </div>
+    </fieldset>
+
   <main role="main">
     <section id="content">
       <div class="grid banner-container banner-adopt" aria-label="Three rhinos in ">
