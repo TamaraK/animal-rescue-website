@@ -1,6 +1,6 @@
 html {
   background-color: #f5fff4;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 .max-width {
@@ -8,11 +8,9 @@ html {
   margin: 0 auto;
 }
 
-
 header nav li a {
   text-decoration: none;
   color: #053800;
-  margin: 10;
 }
 
 header nav li a:hover {
@@ -29,8 +27,8 @@ header nav li a:hover {
   margin-bottom: 2rem;
 }
 
-.banner-container::before{
-  background: rgba(0, 0, 0, 0)-webkit-linear-gradient(bottom left, rgba(150, 150, 150, .5) 0%, rgba(150, 150, 150, .5) 100%) repeat;
+.banner-container::before {
+  background: rgba(0, 0, 0, 0)-webkit-linear-gradient(bottom left, rgba(150, 150, 150, .5)0%, rgba(150, 150, 150, .5)100%) repeat;
   content: "";
   position: absolute;
   display: block;
@@ -96,17 +94,13 @@ footer {
   text-align: center;
 }
 
-h3 {
-  font-weight: bold;
-}
-
 @media only screen and (min-width: 25em) {
 
   header nav {
     text-align: right;
   }
 
-  .banner-container::before{
+  .banner-container::before {
     background: rgba(0, 0, 0, 0)-webkit-linear-gradient(bottom left, rgba(150, 150, 150, .5) 0%, rgba(150, 150, 150, .5) 100%) repeat;
     content: "";
     position: absolute;
@@ -126,7 +120,7 @@ h3 {
     text-align: right;
   }
 
-  .banner-container::before{
+  .banner-container::before {
     background: rgba(0, 0, 0, 0)-webkit-linear-gradient(bottom left, rgba(150, 150, 150, .5) 0%, rgba(150, 150, 150, .5) 100%) repeat;
     content: "";
     position: absolute;
@@ -140,14 +134,13 @@ h3 {
 
 }
 
-
 @media only screen and (min-width: 60em) {
 
   header nav {
     text-align: right;
   }
 
-  .banner-container::before{
+  .banner-container::before {
     background: rgba(0, 0, 0, 0)-webkit-linear-gradient(bottom left, rgba(150, 150, 150, .5) 0%, rgba(150, 150, 150, .5) 100%) repeat;
     content: "";
     position: absolute;
