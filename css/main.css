@@ -17,6 +17,7 @@ header nav li a {
 
 header nav li a:hover {
   border-bottom: 2px solid #053800;
+  color: #000;
 }
 
 .banner-container {
@@ -110,11 +111,11 @@ h3 {
     content: "";
     position: absolute;
     display: block;
-    height: 44.2%;
+    height: 52.4%;
     left: 0;
     top: 0;
     width: 100%;
-    margin-top: 4.7em;
+    margin-top: 5.5em;
   }
 
 }
@@ -130,11 +131,11 @@ h3 {
     content: "";
     position: absolute;
     display: block;
-    height: 44.2%;
+    height: 52.4%;
     left: 0;
     top: 0;
     width: 100%;
-    margin-top: 4.7em;
+    margin-top: 6.2em;
   }
 
 }
@@ -151,11 +152,11 @@ h3 {
     content: "";
     position: absolute;
     display: block;
-    height: 44.2%;
+    height: 52.4%;
     left: 0;
     top: 0;
     width: 100%;
-    margin-top: 3em;
+    margin-top: 6.4em;
   }
 }
 
