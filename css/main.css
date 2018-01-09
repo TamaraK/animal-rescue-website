@@ -28,7 +28,7 @@ header nav li a:hover {
 }
 
 .banner-container::before {
-  background: rgba(0, 0, 0, 0)-webkit-linear-gradient(bottom left, rgba(150, 150, 150, .5)0%, rgba(150, 150, 150, .5)100%) repeat;
+  background: rgba(0, 0, 0, 0) -webkit-linear-gradient(bottom left, rgba(150, 150, 150, .5) 0%, rgba(150, 150, 150, .5) 100%) repeat;
   content: "";
   position: absolute;
   display: block;

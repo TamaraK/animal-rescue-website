@@ -10,6 +10,9 @@
 @-webkit-viewport { width: device-width; scale: 1; }
 @viewport { width: device-width; scale: 1; }
 
+<link href="favicon.ico" rel="shortcut icon">
+  <link rel="apple-touch-icon" href="favicon-196.png">
+  
 html {
   box-sizing: border-box;
   -moz-text-size-adjust: 100%;
