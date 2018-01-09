@@ -1,7 +1,7 @@
 /*
  * Modulifier || Code released under the UNLICENSE
  * Code under other copyrights & licenses listed below.
- * https://modulifier.web-dev.tools/#responsive;images;list-group;embed;media-object;icons;hidden;positioning;nice-lists;forms;buttons;accessibility;print
+ * https://modulifier.web-dev.tools/#responsive;images;list-group;embed;media-object;icons;positioning;forms;buttons;accessibility;print
  */
 
 @-moz-viewport { width: device-width; scale: 1; }
@@ -10,9 +10,6 @@
 @-webkit-viewport { width: device-width; scale: 1; }
 @viewport { width: device-width; scale: 1; }
 
-<link href="favicon.ico" rel="shortcut icon">
-  <link rel="apple-touch-icon" href="favicon-196.png">
-  
 html {
   box-sizing: border-box;
   -moz-text-size-adjust: 100%;
@@ -81,7 +78,8 @@ img {
   border: 0;
 }
 
-.img-flex {
+.img-flex,
+.img-flex img {
   display: block;
   width: 100%;
 }
@@ -250,6 +248,11 @@ svg.img-flex {
   width: 18px;
 }
 
+.i-20, .i--20 {
+  height: 20px;
+  width: 20px;
+}
+
 .i-24, .i--24 {
   height: 24px;
   width: 24px;
@@ -310,57 +313,6 @@ svg.img-flex {
   text-decoration: none;
 }
 
-[hidden], .hidden {
-  /* stylelint-disable declaration-no-important */
-  display: none !important;
-  visibility: hidden !important;
-  /* stylelint-enable */
-}
-
-.visually-hidden {
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  border: 0;
-  clip: rect(0 0 0 0);
-}
-
-.visually-hidden.focusable:active, .visually-hidden.focusable:focus {
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-  clip: auto;
-}
-
-.invisible {
-  visibility: hidden;
-}
-
-.chop,
-.crop {
-  overflow: hidden;
-}
-
-.truncate {
-  max-width: 100%;
-  overflow: hidden;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.scrollable {
-  max-width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
-}
-
 .clearfix::after {
   content: " ";
   display: block;
@@ -387,8 +339,10 @@ svg.img-flex {
 
 .no-auto-margins,
 .not-centered {
-  margin-left: 0;
-  margin-right: 0;
+  /* stylelint-disable declaration-no-important */
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  /* stylelint-enable */
 }
 
 .center-content,
@@ -407,6 +361,21 @@ svg.img-flex {
   -webkit-align-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
+  -webkit-flex-direction: column wrap;
+  -ms-flex-direction: column wrap;
+  flex-flow: column wrap;
+}
+
+.center-content-start,
+.center-content-vertical-start,
+.center-contents-start,
+.center-contents-vertical-start {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-flex-direction: column wrap;
   -ms-flex-direction: column wrap;
   flex-flow: column wrap;
@@ -586,36 +555,19 @@ svg.img-flex {
   height: 100%;
 }
 
-ul {
-  list-style-type: none;
+.height-win-quarter, .h-w-1-4 {
+  height: 25vh;
+  max-height: 46em;
 }
 
-ul > li::before {
-  content: "·";
-  float: left;
-  margin-left: -1.6em;
-  width: 1.3em;
-  text-align: right;
+.height-win-half, .h-w-1-2 {
+  height: 50vh;
+  max-height: 46em;
 }
 
-ol {
-  counter-reset: ol-simple-numbers;
-  list-style-type: none;
-}
-
-ol > li::before {
-  float: left;
-  margin-left: -1.6em;
-  width: 1.3em;
-  counter-increment: ol-simple-numbers;
-  content: counter(ol-simple-numbers);
-  text-align: right;
-}
-
-.list-group > li::before,
-.list-group-inline > li::before,
-.list-group--inline > li::before {
-  content: none;
+.height-win-full, .h-w-1 {
+  height: 100vh;
+  max-height: 46em;
 }
 
 /* stylelint-disable no-descending-specificity */
@@ -967,6 +919,8 @@ select {
   text-decoration: none;
 }
 
+/* stylelint-disable no-descending-specificity */
+
 button,
 .btn {
   cursor: pointer;
@@ -990,6 +944,8 @@ button::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
+
+/* stylelint-enable */
 
 button:focus,
 button:hover,
@@ -1117,17 +1073,106 @@ a:focus, [tabindex="0"]:focus {
   visibility: hidden;
 }
 
+.page-break-before {
+  page-break-before: always;
+}
+
+.page-break-after {
+  page-break-after: always;
+}
+
+.no-page-break-inside {
+  page-break-inside: avoid;
+}
+
 @media print {
 
+  /* stylelint-disable declaration-no-important */
+
   .no-print {
-    display: none;
-    visibility: hidden;
+    display: none !important;
+    visibility: hidden !important;
   }
 
-  .print-only {
-    display: block;
-    visibility: visible;
+  .print-only,
+  .force-print {
+    display: block !important;
+    visibility: visible !important;
   }
+
+  /* stylelint-enable */
+
+  .visually-hidden.force-print {
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    position: static;
+    width: auto;
+    border: 0;
+    clip: initial;
+    clip-path: none;
+  }
+
+  /*
+   * (c) Fabien Sa || MIT License
+   *     http://bafs.github.io/Gutenberg/
+   */
+
+  table,
+  blockquote,
+  pre,
+  code,
+  figure,
+  li,
+  hr,
+  ul,
+  ol,
+  a,
+  tr {
+    page-break-inside: avoid;
+  }
+
+  h1, h2, h3, h4, h5, h6, p, a {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+
+  h1 + p,
+  h2 + p,
+  h3 + p,
+  h4 + p,
+  h5 + p,
+  h6 + p {
+    page-break-before: avoid;
+  }
+
+  img {
+    page-break-after: auto;
+    page-break-before: auto;
+    page-break-inside: avoid;
+  }
+
+  /* stylelint-disable declaration-no-important */
+
+  pre {
+    white-space: pre-wrap !important;
+    word-wrap: break-word;
+  }
+
+  /* stylelint-enable */
+
+  /* End Gutenberg code */
 
   /*
    * (c) HTML5 Boilerplate || MIT License
@@ -1158,29 +1203,14 @@ a:focus, [tabindex="0"]:focus {
   }
 
   a[href^="#"]::after,
-  a[href^="javascript:"]::after {
+  a[href^="javascript:"]::after,
+  a.no-print-href::after,
+  a.href-no-print::after {
     content: "";
-  }
-
-  pre, blockquote {
-    page-break-inside: avoid;
   }
 
   thead {
     display: table-header-group;
-  }
-
-  tr, img {
-    page-break-inside: avoid;
-  }
-
-  p, h1, h2, h3, h4, h5, h6 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    page-break-after: avoid;
   }
 
   /* End HTML5 Boilerplate code */
