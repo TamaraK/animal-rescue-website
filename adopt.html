@@ -46,7 +46,9 @@
       </div>
     </section>
 
-    <form class="" action="index.html" method="POST">
+    <h2>Complete the form to make a little ones life better</h2>
+
+    <form action="index.html" method="POST">
 
       <fieldset class="wrapper">
 
@@ -130,23 +132,15 @@
         </div>
       </fieldset>
 
-      <fieldset class="wrapper radio gutter-1-2 push-0">
-      <legend class="giga pad-top pad-b-1-2">Do you want a tax reciept?</legend>
-      <div class="unit pad-bottom">
-        <input type="radio" id="drive-y" name="check">
-        <label>Yes</label>
-        <input type="radio" id="drive-n" name="check">
-        <label>No</label>
-      </div>
-    </fieldset>
-
     <fieldset class="wrapper radio gutter-1-2 push-0">
     <legend class="giga pad-top pad-b-1-2">Do you want to recieve our welcome package?</legend>
     <div class="unit pad-bottom">
       <input type="radio" id="drive-y" name="check">
-      <label>Yes</label>
+      <label for="yes" id="yes" aria-label="Yes tax reciept">Yes</label>
+    </div>
+    <div>
       <input type="radio" id="drive-n" name="check">
-      <label>No</label>
+      <label for="no" id="no" aria-label="No tax reciept">No</label>
     </div>
   </fieldset>
 
@@ -181,7 +175,6 @@
             <label for="climb">National Geographic</label>
           </div>
 
-
           <div class="push-1-4">
             <input id="craft" type="checkbox">
             <label for="craft">Word of Mouth</label>
@@ -212,6 +205,7 @@
 <div class="embed embed-3by1">
   <img class="embed-item" src="em.jpg" alt="">
 </div>
+</main>
 
     <footer role="contentinfo" id="footer" tabindex="0">
       <div class="grid max-width micro pad-top">
