@@ -36,7 +36,7 @@ header nav li a:hover {
   content: "";
   position: absolute;
   display: block;
-  height: 43.4%;
+  height: 46%;
   left: 0;
   top: 0;
   width: 100%;
@@ -109,7 +109,7 @@ footer {
     content: "";
     position: absolute;
     display: block;
-    height: 52.4%;
+    height: 35%;
     left: 0;
     top: 0;
     width: 100%;
@@ -129,7 +129,7 @@ footer {
     content: "";
     position: absolute;
     display: block;
-    height: 52.4%;
+    height: 45%;
     left: 0;
     top: 0;
     width: 100%;
@@ -149,7 +149,7 @@ footer {
     content: "";
     position: absolute;
     display: block;
-    height: 52.4%;
+    height: 45%;
     left: 0;
     top: 0;
     width: 100%;
