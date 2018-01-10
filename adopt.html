@@ -10,7 +10,7 @@
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 </head>
 <body>
 
@@ -132,90 +132,92 @@
         </div>
       </fieldset>
 
-    <fieldset class="wrapper radio gutter-1-2 push-0">
-    <legend class="giga pad-top pad-b-1-2">Do you want to recieve our welcome package?</legend>
-    <div class="unit pad-bottom">
-      <input type="radio" id="drive-y" name="check">
-      <label for="yes" id="yes" aria-label="Yes tax reciept">Yes</label>
+      <fieldset class="wrapper radio gutter-1-2 push-0">
+        <legend class="giga pad-top pad-b-1-2">Do you want to recieve our welcome package?</legend>
+        <div class="unit pad-bottom">
+          <input type="radio" id="drive-y" name="check">
+          <label id="yes" aria-label="Yes tax reciept">Yes</label>
+        </div>
+        <div>
+          <input type="radio" id="drive-n" name="check">
+          <label id="no" aria-label="No tax reciept">No</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="wrapper gutter-1-2">
+        <legend class="giga pad-top pad-b-1-2">Where did you hear about us?</legend>
+        <div class="grid grid-stretch">
+          <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+            <div class="push-1-4">
+              <input id="shove" type="checkbox">
+              <label for="shove">Facebook</label>
+            </div>
+
+            <div class="push-1-4">
+              <input id="gps" type="checkbox">
+              <label for="gps">Instagram</label>
+            </div>
+
+            <div class="push-1-4">
+              <input id="blog" type="checkbox">
+              <label for="blog">Radio</label>
+            </div>
+
+            <div class="push-1-4">
+              <input id="photography" type="checkbox">
+              <label for="photography">News</label>
+            </div>
+          </div>
+
+          <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+            <div class="push-1-4">
+              <input id="climb" type="checkbox">
+              <label for="climb">National Geographic</label>
+            </div>
+
+            <div class="push-1-4">
+              <input id="craft" type="checkbox">
+              <label for="craft">Word of Mouth</label>
+            </div>
+
+            <div class="push-1-4">
+              <input id="atv" type="checkbox">
+              <label for="atv">Other</label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="wrapper gutter-1-2 pad-b-2">
+        <legend class="giga pad-top pad-b-1-2">Why are you interesested in donating?</legend>
+        <div class="unit">
+          <textarea id="questions" name="name" rows="8" cols="80"></textarea>
+        </div>
+        <a class=" href="" aria-label="link">v</a>
+      </fieldset>
+
+      <div class="text-center">
+        <button class="btn btn-ghost text-center content-shrink" aria-label="Donate to the Foundation" type="submit">Donate!</button>
+      </div>
+
+    </form>
+
+    <figure>
+      <div class="embed embed-3by1">
+        <img class="embed-item" src="lines.jpg" alt="">
+      </div>
+    </figure>
+
+  </main>
+
+  <footer role="contentinfo" id="footer" tabindex="0">
+    <div class="grid max-width micro pad-top">
+      <div class="unit xs-1 s-1 m-1 l-1 xl-1 push-1 foot">
+        <h3 class="kilo bold text-center push-1-2">Home Base</h3>
+        <p class="push-1-2">KWS Central Workshop Gate, off, Magadi Rd,<br>Nairobi, Kenya</p>
+      </div>
     </div>
-    <div>
-      <input type="radio" id="drive-n" name="check">
-      <label for="no" id="no" aria-label="No tax reciept">No</label>
-    </div>
-  </fieldset>
+  </footer>
 
-    <fieldset class="wrapper gutter-1-2">
-      <legend class="giga pad-top pad-b-1-2">Where did you hear about us?</legend>
-      <div class="grid grid-stretch">
-        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-          <div class="push-1-4">
-            <input id="shove" type="checkbox">
-            <label for="shove">Facebook</label>
-          </div>
-
-          <div class="push-1-4">
-            <input id="gps" type="checkbox">
-            <label for="gps">Instagram</label>
-          </div>
-
-          <div class="push-1-4">
-            <input id="blog" type="checkbox">
-            <label for="blog">Radio</label>
-          </div>
-
-          <div class="push-1-4">
-            <input id="photography" type="checkbox">
-            <label for="photography">News</label>
-          </div>
-        </div>
-
-        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-          <div class="push-1-4">
-            <input id="climb" type="checkbox">
-            <label for="climb">National Geographic</label>
-          </div>
-
-          <div class="push-1-4">
-            <input id="craft" type="checkbox">
-            <label for="craft">Word of Mouth</label>
-          </div>
-
-          <div class="push-1-4">
-            <input id="atv" type="checkbox">
-            <label for="atv">Other</label>
-          </div>
-        </div>
-      </div>
-    </fieldset>
-
-    <fieldset class="wrapper gutter-1-2 pad-b-2">
-      <legend class="giga pad-top pad-b-1-2">Why are you interesested in donating?</legend>
-      <div class="unit">
-        <textarea id="questions" name="name" rows="8" cols="80"></textarea>
-      </div>
-      <a href="rescues.html">Our Rescues</a>
-    </fieldset>
-
-  <div class="text-center">
-    <button class="btn btn-ghost text-center content-shrink" aria-label="Donate to the Foundation" type="submit">Donate!</button>
-  </div>
-
-</form>
-
-<div class="embed embed-3by1">
-  <img class="embed-item" src="em.jpg" alt="">
-</div>
-</main>
-
-    <footer role="contentinfo" id="footer" tabindex="0">
-      <div class="grid max-width micro pad-top">
-        <div class="unit xs-1 s-1 m-1 l-1 xl-1 push-1 foot">
-          <h3 class="kilo bold text-center push-1-2">Home Base</h3>
-          <p class="push-1-2">KWS Central Workshop Gate, off, Magadi Rd,<br>
-              Nairobi, Kenya</p>
-        </div>
-      </div>
-    </footer>
-
-    </body>
-    </html>
+</body>
+</html>
