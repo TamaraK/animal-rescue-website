@@ -13,6 +13,10 @@ header nav li a {
   color: #053800;
 }
 
+a:hover {
+  color: #fff;
+}
+
 header nav li a:hover {
   border-bottom: 2px solid #053800;
   color: #000;
